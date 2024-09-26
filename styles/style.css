@@ -13,7 +13,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: 'Fira Sans Condensed', Arial, sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
@@ -43,7 +43,7 @@ ol {
   display: flex;
   margin: auto;
   color: #fff;
-  font-family: "Fira Sans Condensed", sans-serif;
+  font-family: "Fira Sans Condensed", Arial, sans-serif;
   font-size: 18px;
   background-color: #1b1919;
   inline-size: 1200px;
@@ -63,7 +63,7 @@ ol {
 .title {
   margin-bottom: 26px;
   color: #fff;
-  font-family: Oswald;
+  font-family: Oswald, Arial, sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
@@ -103,7 +103,7 @@ ol {
 .search-form__fieldset-title {
   margin-bottom: 5px;
   color: #fff;
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, Arial, sans serif;
   font-weight: 400;
   font-size: 18px;
   line-height: normal;
@@ -165,7 +165,7 @@ ol {
   border-left: 0;
   padding: 2.5px 14px 2.5px 0;
   color: #fff;
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, Arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
   background: transparent;
@@ -173,7 +173,7 @@ ol {
 }
 
 .search-form__submit-button {
-  align-items: end;
+  align-self: end;
 }
 
 .search-form__label:hover .search-form__label-text {
@@ -208,7 +208,7 @@ ol {
   position: relative;
   height: 298px;
   padding: 3px;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .content__details {
@@ -245,11 +245,12 @@ ol {
 
 .content__video-card-title {
   margin-bottom: 6px;
-  font-family: Oswald;
+  font-family: Oswald, Arial, sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 100%;
   text-transform: uppercase;
+  text-overflow: ellipsis;
 }
 
 .content__video-card-description {
@@ -275,20 +276,32 @@ ol {
   outline-offset: 1px;
 }
 
+.content__card-link:hover {
+  text-decoration: underline;
+}
+
 /* konec blocka s content */
 /* block s button */
 
 .button {
   border: 1px solid #fff;
-  padding: 6px 73.5px;
   color: #fff;
-  font-family: Fira Sans Condensed;
+  font-family: Fira Sans Condensed, Arial, sans-serif;
   font-weight: 700;
   font-size: 18px;
-  line-height: normal;
   text-align: center;
   background: transparent;
   cursor: pointer;
+}
+
+.search-form__submit-button {
+  padding: 6px 73.5px;
+  line-height: normal;
+}
+
+.more-button {
+  padding: 6px 0;
+  inline-size: 100%;
 }
 
 .button:hover {
@@ -306,8 +319,4 @@ ol {
 
 .button:active {
   background: #545050;
-}
-
-.more__button {
-  width: 100%;
 }
