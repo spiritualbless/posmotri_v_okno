@@ -239,7 +239,7 @@ ol {
   text-decoration: none;
 }
 
-.content__card-link-current {
+.content__card-link_current {
   background: #545050;
 }
 
@@ -251,6 +251,7 @@ ol {
   line-height: 100%;
   text-transform: uppercase;
   text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .content__video-card-description {
